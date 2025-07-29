@@ -455,8 +455,6 @@ plt.imshow(X_test[0].reshape(28, 28), cmap='Greys')
 
 模型信息
 
-
-
 ```bash
 Model: "sequential"
 _________________________________________________________________

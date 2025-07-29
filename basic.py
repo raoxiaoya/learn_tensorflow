@@ -1,11 +1,7 @@
 import tensorflow as tf
 
+# print(tf.__version__)
 
-'''
-
-print(tf.__version__)
-
-'''
 
 '''
 
@@ -24,10 +20,9 @@ mnist = tf.keras.datasets.mnist
 x_train, x_test = x_train / 255.0, x_test / 255.0
 
 x = x_train[:1]
-print(x.shape) # (1, 28, 28)
-print(x_train.shape) # (1, 28, 28)
+# print(x.shape) # (1, 28, 28)
+# print(x_train.shape) # (1, 28, 28)
 
-'''
 
 # 通过堆叠层来构建 tf.keras.Sequential 模型
 model = tf.keras.models.Sequential([
@@ -60,5 +55,3 @@ model.fit(x_train, y_train, epochs=5)
 
 # Model.evaluate 方法通常在 "Validation-set" 或 "Test-set" 上检查模型性能
 model.evaluate(x_test,  y_test, verbose=2)
-
-'''
